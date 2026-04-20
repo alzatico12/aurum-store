@@ -17,7 +17,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <span className="text-xl font-semibold tracking-[0.3em] uppercase text-foreground">
-              Dajú
+              AURUM
             </span>
             <span className="ml-1 text-primary text-2xl leading-none">·</span>
           </Link>
