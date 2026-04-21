@@ -2,13 +2,9 @@
 // AURUM - Tipos base del dominio
 // ============================================
 
+ // Solo cambia esta línea:
 export type ProductCategory =
-  | "jewelry"
-  | "bags"
-  | "tech"
-  | "belts"
-  | "watches"
-  | "sunglasses";
+ "jewelry" | "bags" | "watches";
 
 export interface Product {
   id: string;

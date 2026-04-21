@@ -1,4 +1,7 @@
-//Links de navegación
+// ============================================
+// AURUM - Links de navegación
+// ============================================
+
 import Link from "next/link";
 
 const links = [
