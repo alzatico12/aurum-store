@@ -1,10 +1,13 @@
-// Layout raíz
-
+// ============================================
+// AURUM - Layout raíz
+// ============================================
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer"; 
+import { Footer } from "@/components/layout/Footer";
+import { CartProvider } from "@/context/CartContext";
+import { CartSidebar } from "@/components/shop/cart/CartSidebar";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,9 +36,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <CartProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+          <CartSidebar />
+        </CartProvider>
       </body>
     </html>
   );
