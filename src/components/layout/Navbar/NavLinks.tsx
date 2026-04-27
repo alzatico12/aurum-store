@@ -1,6 +1,4 @@
-// ============================================
-// AURUM - Links de navegación
-// ============================================
+// Links de navegación
 
 import Link from "next/link";
 
