@@ -1,4 +1,4 @@
-// AURUM - Home Page
+// Home Page
 
 import { HeroSection } from "@/components/shop/HeroSection";
 import { CategoriesSection } from "@/components/shop/CategoriesSection";
